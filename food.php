@@ -70,14 +70,14 @@ function change(){
         }else{
         echo "\n".color("red","-] Message: ".$messageboba19);
         goride:
-        echo "\n".color("yellow","!] Claim voc GOCAR");
+        echo "\n".color("yellow","!] Claim voc UPNORMAL");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
         }
         sleep(3);
-        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCAR"}');
+        $goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HEPIUPNORMAL"}');
         $message1 = fetch_value($goride,'"message":"','"');
         echo "\n".color("green","+] Message: ".$message1);
         echo "\n".color("yellow","!] Claim GOFOOD 2");
